@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+// EXAMPLE
+
+h1 {
+  @extend %font-main;
+  @include font(4.4rem, 5.4rem, 400);
+}
